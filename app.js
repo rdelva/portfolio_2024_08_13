@@ -8,11 +8,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());    
 
 app.get('/', (req, res)=> {
-    res.send('I love treehouse');
+    res.render('index');
 });
 
 app.get('/aboutme', (req, res)=> {
-    res.send('About Me');
+    res.render('aboutme');
 });
 
 
