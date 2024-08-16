@@ -1,11 +1,15 @@
 const express = require('express');
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());  
+app.use('/static', express.static('public'));
+
+
 app.set('view engine', 'pug');
 
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());    
+
 
 app.get('/', (req, res)=> {
     res.render('index');
