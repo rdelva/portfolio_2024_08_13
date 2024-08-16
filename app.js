@@ -20,7 +20,7 @@ app.get('/aboutme', (req, res)=> {
 });
 
 
-app.get('/contact me', (req, res)=> {
+app.get('/contactme', (req, res)=> {
     res.send('Contact Me');
 });
 
